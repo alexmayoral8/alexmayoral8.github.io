@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixture para prueba de fatiga | Alejandro Mayoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="name-link" href="index.html">Alejandro Mayoral</a>
+      <nav aria-label="Navegacion del proyecto">
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#inicio">CV</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-page-hero">
+        <a class="back-link" href="index.html#proyectos">Volver a proyectos</a>
+        <span class="detail-tag">Test Fixture | Arduino | Fatigue Test</span>
+        <h1>Fixture for fatigue test</h1>
+        <p class="intro">
+        Automated fixture to reproduce cyclic deformation in a therapy device, validating its mechanical integrity and operation after repeated use.
+        </p>
+      </section>
+
+      <section class="section project-page-grid">
+        <article class="project-detail">
+          <div class="detail-copy">
+            <h2>Project Overview</h2>
+            <p>
+            During my internship at a medical device company, I designed and developed a custom test fixture to perform fatigue testing on a wearable device intended to relieve abdominal pain. The fixture was created to simulate the repetitive bending experienced by the device during normal use, enabling long-term durability and reliability evaluation under controlled conditions.
+            </p>
+            <p>
+            The fixture uses an electro-mechanical system with stepper motors, Arduino control and specific fasteners to flex both ends of the device in an automated and consistent manner.
+            </p>
+
+            <h2>My contributions</h2>
+            <ul class="result-list">
+              <li>Designed the fixture using CAD software.</li>
+              <li>Developed a mechanism to reproduce cyclic bending conditions.</li>
+              <li>Selected manufacturing processes and materials.</li>
+              <li>Fabricated and assembled the fixture using laser-cut acrylic and 3D-printed components.</li>
+              <li>Created a fatigue testing protocol.</li>
+              <li>Defined pre-test and post-test inspection procedures.</li>
+              <li>Executed the test protocol with 10 devices.</li>
+              <li>Made a test report with the findings.</li>
+            </ul>
+
+            <a
+              class="button project-link"
+              href="https://github.com/alexmayoral8/Fatigue-test-fixture"
+              target="_blank"
+              rel="noreferrer"
+            >
+             See project repository on GitHub
+            </a>
+          </div>
+          <div class="detail-media">
+            <video controls playsinline preload="metadata">
+              <source src="assets/fixtures/video_fatigue.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
+            <p>
+            Video of the fixture executing the cyclical flexing of the device during the fatigue test.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

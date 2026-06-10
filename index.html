@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandro Mayoral | Biomedical Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Alejandro Mayoral, Biomedical Engineer enfocado en test engineering, fixture design, IQC, manufacturing quality y medical device development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="name-link" href="#inicio">Alejandro Mayoral</a>
+      <nav aria-label="Navegacion principal">
+        <a href="#inicio">CV</a>
+        <a href="#proyectos">Projects</a>
+        <a href="#contacto">Contact</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Biomedical Engineer</p>
+          <h1>Alejandro Mayoral</h1>
+          <p class="intro">
+            I am a Biomedical Engineering student passionate about medical device development, rehabilitation technologies, and the integration of hardware, software, and physiological signals to solve healthcare problems.
+          </p>
+          <p class="intro">
+            I am especially interested in roles related to medical devices, R&D, clinical engineering, rehabilitation technology, product development, and biomedical software, where I can contribute to the design, testing, and improvement of healthcare technologies.          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">See Projects</a>
+            <a class="button" href="assets/CV-Alejandro-Mayoral.pdf" target="_blank" rel="noreferrer">
+              Open CV
+            </a>
+          </div>
+          <ul class="focus-list" aria-label="Areas de enfoque">
+            <li>Test Protocols</li>
+            <li>Fixture Design</li>
+            <li>IQC</li>
+            <li>PFMEA</li>
+            <li>MATLAB / Python</li>
+          </ul>
+        </div>
+
+        <aside class="hero-cv" aria-labelledby="hero-cv-title">
+          <div class="hero-cv-header">
+            <div>
+              <h2 id="hero-cv-title">Curriculum Vitae</h2>
+            </div>
+            <a href="assets/CV-Alejandro-Mayoral.pdf" target="_blank" rel="noreferrer">Open</a>
+          </div>
+          <iframe
+            title="CV Alejandro Mayoral"
+            src="assets/CV-Alejandro-Mayoral.pdf"
+          ></iframe>
+        </aside>
+      </section>
+
+      <section class="section" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <h2 id="projects-title">Projects</h2>
+          <p>
+            Each card summarizes the goal of the project. Click to see the problem, the
+            solution and the work done.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card" href="rehabilitacion.html">
+            <img
+              src="assets/ArmMotus/fotoArmMotus.jpeg"
+              alt="Arm Motus M2 Pro rehabilitation setup"
+            />
+            <div>
+              <span>Rehabilitation Tech</span>
+              <h3>Robotic Rehabilitation System with EMG Analysis</h3>
+              <p>Integrated Unity, ArmMotus M2 Pro, and EMG acquisition to collect synchronized movement and muscle data, validating the system with 10 users through performance and signal analysis.</p>
+            </div>
+          </a>          
+          
+          <a class="project-card" href="fixture-fatigue.html">
+            <img
+              src="assets/fixtures/fatigue-fixture-front.png"
+              alt="Fixture de fatiga con dispositivo montado"
+            />
+            <div>
+              <span>Test Fixture</span>
+              <h3>Fixture for fatigue test</h3>
+              <p>Fixture for automation of bending cycles to validate mechanical durability.</p>
+            </div>
+          </a>
+
+
+          <a class="project-card" href="emg-arduino.html">
+            <img
+              class="contain-card-media"
+              src="assets/EMGcircuit/tarjeta2.png"
+              alt="EMG circuit connected to Arduino for muscle activation detection"
+            />
+            <div>
+              <span>EMG / Arduino</span>
+              <h3>EMG-Based Muscle Activation Detector for Prosthetic Control</h3>
+              <p>Designed and built an EMG-based circuit capable of detecting muscle activity, processing the signal with Arduino, and classifying contraction intensity as low, medium, or high based on maximum voluntary contraction.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="flappy-bird.html">
+            <video
+              class="card-video"
+              src="assets/FlappyRehab/flappyRehabCamara.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              aria-label="Preview del juego Flappy Bird controlado con acelerometro"
+            ></video>
+            <div>
+              <span>Game-Based Rehab</span>
+              <h3>Flappy Bird for Shoulder Rehabilitation</h3>
+              <p>Unity-based game adapted for shoulder rehabilitation exercises. Controlled with accelerometer or camera.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto">
+        <h2>Contact</h2>
+        <div class="contact-links">
+          <a href="mailto:alexmayoral8@gmail.com">alexmayoral8@gmail.com</a>
+          <a href="tel:+528119991144">+52 811 999 1144</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Alejandro Mayoral</span>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

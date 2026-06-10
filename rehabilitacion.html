@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehabilitacion de miembro superior | Alejandro Mayoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="name-link" href="index.html">Alejandro Mayoral</a>
+      <nav aria-label="Navegacion del proyecto">
+        <a href="index.html#proyectos">Projects</a>
+        <a href="index.html#inicio">CV</a>
+        <a href="index.html#contacto">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-page-hero">
+        <a class="back-link" href="index.html#proyectos">Volver a proyectos</a>
+        <span class="detail-tag">Unity | EMG | MATLAB / Python | User Testing</span>
+        <h1>Upper Limb Rehabilitation System</h1>
+        <p class="intro">
+          Integration of serious game, ArmMotus M2 Pro, and EMG acquisition system to evaluate motor performance in
+          an interactive task.
+        </p>
+      </section>
+
+      <section class="section project-page-grid">
+        <article class="project-detail">
+          <div class="detail-copy">
+            <h2>Project Description</h2>
+            <p>
+              I developed and validated a Unity-based serious game for upper-limb rehabilitation, integrating the ArmMotus M2 Pro robotic system, EMG acquisition, and data analysis tools. The system allows users to perform trajectory-following tasks while movement performance and muscle activity are recorded and analyzed.
+            </p>
+            <p>
+              The project was evaluated with 10 users through a structured testing protocol. Gameplay metrics, movement data, and EMG signals were collected to assess movement accuracy, stability, task performance, and muscle activation.
+            </p>
+            <div class="two-col">
+              <div>
+                <h4>Problem</h4>
+                <p>
+                  Upper-limb rehabilitation often requires repetitive exercises, but patient performance is not always quantified in a detailed or engaging way. This project aimed to create an interactive rehabilitation tool capable of combining gamified therapy, robotic movement tracking, EMG signal acquisition, and quantitative performance analysis.
+                </p>
+              </div>
+              <div>
+                <h4>Solution</h4>
+                <p>
+                  The system connects three main components: a Unity serious game, the ArmMotus M2 Pro rehabilitation robot, and an EMG acquisition system. Users control a spaceship through upper-limb movements while the game records movement data, task events, collisions, and completion status. EMG signals are collected during gameplay to analyze muscle activation during the rehabilitation tasks.
+                </p>
+              </div>
+            </div>
+            <h2>Validation</h2>
+            <p>
+              The system was evaluated with 10 users through a structured testing protocol. Each
+              participant completed rehabilitation-oriented gameplay tasks while movement data, game
+              events, and EMG signals were recorded. The collected data were analyzed to assess the
+              relationship between game performance, movement quality, and muscle activation.
+            </p>
+            <p>
+              Example dashboard showing gameplay metrics from one test user. The complete
+              validation protocol was conducted with 10 users.
+            </p>
+            <figure class="inline-figure">
+              <img
+                src="assets/ArmMotus/dashboard.png"
+                alt="Dashboard showing gameplay metrics from one Arm Motus validation user"
+              />
+              <figcaption>Gameplay metrics dashboard from one validation test user.</figcaption>
+            </figure>
+            <p>
+              EMG signals were recorded and analyzed separately to complement the gameplay metrics
+              and evaluate muscle activation during the rehabilitation tasks.
+            </p>
+            <h2>What I Did</h2>
+            <ul class="result-list">
+              <li>Developed the serious game in Unity using C#.</li>
+              <li>Designed the gameplay mechanics, levels, obstacles, lives system, and user interface.</li>
+              <li>Integrated the game with the ArmMotus M2 Pro robotic system and EMG acquisition system.</li>
+              <li>Implemented data logging and CSV export.</li>
+              <li>Calculated movement metrics such as trajectory error and movement stability.</li>
+              <li>Processed and analyzed EMG signals.</li>
+              <li>Designed and executed a testing protocol with 10 users.</li>
+              <li>Created visualizations/dashboards to interpret gameplay and EMG results.</li>
+            </ul>
+          </div>
+          <div class="detail-media compact-video">
+            <video controls playsinline preload="metadata">
+              <source src="assets/ArmMotus/pruebas%20emg%202%20(1)~2.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
+            <p>
+              Demonstration video of the rehabilitation system integrating Arm Motus, serious game, and EMG acquisition.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

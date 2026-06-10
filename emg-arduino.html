@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circuito EMG con Arduino | Alejandro Mayoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="name-link" href="index.html">Alejandro Mayoral</a>
+      <nav aria-label="Navegacion del proyecto">
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#inicio">CV</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-page-hero">
+        <a class="back-link" href="index.html#proyectos">Volver a proyectos</a>
+        <span class="detail-tag">EMG | Electronics | Arduino</span>
+        <h1>EMG-Based Muscle Activation Detector for Prosthetic Control</h1>
+        <p class="intro">
+          Designed and built an EMG-based circuit capable of detecting muscle activity, processing the signal with Arduino, and classifying contraction intensity as low, medium, or high based on maximum voluntary contraction.
+        </p>
+        <p>
+        </p>
+      </section>
+
+      <section class="section project-page-grid">
+        <article class="project-detail">
+          <div class="detail-copy">
+            <h2>Project Description</h2>
+            <p>
+              This project consisted of designing and building a low-cost EMG system to detect muscle activation from the biceps and classify contraction intensity in real time. The circuit conditions the EMG signal using instrumentation amplification, filtering, rectification, and voltage regulation before sending the signal to an Arduino for processing.
+            </p>
+            <p>
+              The system was calibrated using a maximum voluntary contraction (MVC) protocol, allowing it to estimate the relative intensity of muscle contractions. Based on the percentage of MVC, the system classifies contractions as low, medium, or high and provides visual feedback through an LCD screen and LEDs. The long-term goal of the project was to explore how EMG signals could be used as proportional control inputs for prosthetic applications.
+              The system asks the user to perform a maximum voluntary contraction and uses that reference value to estimate relative muscle activation. Based on this percentage, the system classifies the contraction as low, medium, or high and provides visual feedback through an LCD screen and LEDs. The long-term purpose of the project was to explore how EMG signals could be used as proportional control inputs for prosthetic applications.
+            </p>
+            <figure class="inline-figure">
+              <img
+                src="assets/EMGcircuit/circuito.png"
+                alt="EMG acquisition circuit diagram"
+              />
+              <figcaption>EMG acquisition and signal conditioning circuit.</figcaption>
+            </figure>
+            <h2>What I Did</h2>
+            <ul class="result-list">
+              <li>Construction of the EMG acquisition circuit.</li>
+              <li>Connection of the circuit to Arduino for data acquisition and processing.</li>
+              <li>Implementation of calibration based on initial MVC.</li>
+              <li>Classification of contractions into interpretable levels.</li>
+            </ul>
+          </div>
+          <div class="detail-media compact-video">
+            <video controls playsinline preload="metadata">
+              <source src="assets/EMGcircuit/EMGvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
+            <p>
+              Video demonstration of the EMG circuit reading muscle activation and displaying
+              contraction intensity feedback.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

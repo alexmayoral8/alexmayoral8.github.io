@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird para rehabilitacion de hombro | Alejandro Mayoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="name-link" href="index.html">Alejandro Mayoral</a>
+      <nav aria-label="Navegacion del proyecto">
+        <a href="index.html#proyectos">Projects</a>
+        <a href="index.html#inicio">CV</a>
+        <a href="index.html#contacto">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-page-hero">
+        <a class="back-link" href="index.html#proyectos">Go back to projects</a>
+        <span class="detail-tag">Unity | Accelerometer | Computer Vision | Shoulder Rehab</span>
+        <h1>Shoulder Rehabilitation Game Based on Flappy Bird</h1>
+        <p class="intro">
+          Game designed to motivate repetitive shoulder exercises using arm movement as the primary control method.
+        </p>
+      </section>
+
+      <section class="section project-page-grid">
+        <article class="project-detail">
+          <div class="detail-copy">
+            <h2>Project Overview</h2>
+            <p>
+            This project adapts the mechanics of Flappy Bird to support shoulder rehabilitation exercises. Instead of controlling the character with a keyboard or mouse, the user moves their arm and receives real-time visual feedback within the game.
+            </p>
+            <p>
+            The goal was to create a low-cost, motivating and interactive tool that would help convert repetitive therapeutic movements into a more engaging experience for the user.
+
+            </p>
+
+            <div class="two-col">
+              <div>
+                <h4>Accelerometer control</h4>
+                <p>
+                  An accelerometer is placed on the arm near the elbow to estimate orientation
+                  of the arm and the angle of shoulder abduction. The abduction elevates the character and
+                  adduction makes it descend.
+                </p>
+              </div>
+              <div>
+                <h4>Camera-based control</h4>
+                <p>
+                  The system can also function with computer vision. A camera detects
+                  arm movement in real-time, eliminating the need for portable sensors.
+                </p>
+              </div>
+            </div>
+
+            <h2>Calibration System</h2>
+            <p>
+              Before playing, a calibration routine was implemented to adapt the game to
+              users with different ranges of motion. The user lowers the arm as far as possible
+              and then raises it to their comfortable limit. These positions are saved as minimum and
+              maximum, and the game maps the user's available movement to the character's movement range.
+            </p>
+
+            <h2>My contributions</h2>
+            <ul class="result-list">
+              <li>Designed and developed the rehabilitation game in Unity.</li>
+              <li>Implemented accelerometer-based motion tracking for shoulder movement monitoring.</li>
+              <li>Developed a camera-based control alternative using computer vision.</li>
+              <li>Created the calibration system to adapt the game to different user capabilities.</li>
+              <li>Integrated motion data with real-time gameplay mechanics.</li>
+              <li>Designed an interactive experience focused on motivation, adherence, and therapeutic repetition.</li>
+            </ul>
+
+            <h2>Technologies and Skills</h2>
+            <ul class="skill-list">
+              <li>Unity Game Engine</li>
+              <li>C#</li>
+              <li>Accelerometer-Based Motion Tracking</li>
+              <li>Computer Vision</li>
+              <li>Real-Time Motion Analysis</li>
+              <li>Rehabilitation Engineering</li>
+              <li>Sensor Integration</li>
+            </ul>
+          </div>
+
+          <div class="detail-media video-stack">
+            <figure>
+              <video controls playsinline preload="metadata">
+                <source src="assets/FlappyRehab/flappyRehabCamara.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
+              <figcaption>Mode with camera and motion tracking without portable sensor.</figcaption>
+            </figure>
+            <figure>
+              <video controls playsinline preload="metadata">
+                <source src="assets/FlappyRehab/flappyRehabAcelerometro.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
+              <figcaption>Mode with accelerometer and motion tracking with portable sensor.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
