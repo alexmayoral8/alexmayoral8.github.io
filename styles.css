@@ -519,6 +519,21 @@ h4 {
   min-height: 260px;
 }
 
+.tyvek-gallery {
+  grid-template-columns: 1fr;
+}
+
+.tyvek-gallery img,
+.tyvek-gallery img:first-child {
+  grid-column: auto;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  border: 1px solid var(--line);
+  object-fit: contain;
+  box-shadow: var(--shadow);
+}
+
 .detail-media {
   align-self: start;
 }
