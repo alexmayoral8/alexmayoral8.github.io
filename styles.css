@@ -370,7 +370,7 @@ h4 {
 }
 
 .fixture-project-grid {
-  grid-template-columns: minmax(260px, 420px);
+  grid-template-columns: repeat(2, minmax(260px, 420px));
 }
 
 .project-page-hero {
