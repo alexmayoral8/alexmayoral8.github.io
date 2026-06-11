@@ -345,6 +345,34 @@ h4 {
   background: var(--surface);
 }
 
+.fixtures-overview {
+  padding-top: 24px;
+}
+
+.fixture-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.fixture-type-card,
+.empty-state {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.fixture-type-card p,
+.empty-state p {
+  color: var(--muted);
+}
+
+.fixture-project-grid {
+  grid-template-columns: minmax(260px, 420px);
+}
+
 .project-page-hero {
   max-width: 1040px;
   padding: clamp(52px, 8vw, 92px) clamp(20px, 5vw, 72px) 26px;
@@ -565,6 +593,7 @@ h4 {
 
   .project-grid,
   .hero,
+  .fixture-type-grid,
   .project-detail,
   .two-col {
     grid-template-columns: 1fr;
