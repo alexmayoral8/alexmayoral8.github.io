@@ -519,6 +519,43 @@ h4 {
   min-height: 260px;
 }
 
+.figure-gallery {
+  display: grid;
+  gap: 18px;
+}
+
+.figure-gallery figure {
+  margin: 0;
+}
+
+.figure-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  box-shadow: var(--shadow);
+}
+
+.figure-gallery figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.figure-gallery figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.94rem;
+}
+
+.alignment-gallery {
+  max-width: 460px;
+  justify-self: center;
+}
+
 .tyvek-gallery {
   grid-template-columns: 1fr;
 }
