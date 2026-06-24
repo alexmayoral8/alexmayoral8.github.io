@@ -70,12 +70,34 @@ nav a:hover,
 }
 
 .hero {
-  max-width: 1040px;
-  padding: clamp(64px, 10vw, 120px) clamp(20px, 5vw, 72px) 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 390px);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+  max-width: 1320px;
+  padding: clamp(64px, 9vw, 112px) clamp(20px, 5vw, 72px) 56px;
 }
 
 .hero-copy {
   max-width: 840px;
+}
+
+.hero-portrait {
+  width: 100%;
+  max-width: 390px;
+  margin: 0;
+  justify-self: end;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: var(--shadow);
 }
 
 .kicker {
@@ -571,10 +593,16 @@ h4 {
   }
 
   .project-grid,
+  .hero,
   .fixture-type-grid,
   .project-detail,
   .two-col {
     grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    max-width: 360px;
+    justify-self: start;
   }
 }
 
